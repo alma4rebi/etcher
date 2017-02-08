@@ -15,7 +15,7 @@
     "sass": "node-sass ./lib/gui/scss/main.scss > ./lib/gui/css/main.css",
     "jslint": "eslint lib tests scripts bin versionist.conf.js",
     "scsslint": "scss-lint lib/gui/scss",
-    "codespell": "codespell.py lib tests",
+    "codespell": "codespell.py --dictionary=dictionary lib tests",
     "lint": "npm run jslint && npm run scsslint && npm run codespell",
     "changelog": "versionist",
     "start": "electron lib/start.js",
